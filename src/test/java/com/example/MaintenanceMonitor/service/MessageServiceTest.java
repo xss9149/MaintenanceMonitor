@@ -9,4 +9,10 @@ public class MessageServiceTest {
         MessageService ms = new MessageService();
         assertEquals("Everything works as expected",ms.getMessage());
     }
+    @Test
+    void testSetMessage(){
+        MessageService ms = new MessageService();
+        ms.setMessage("this is a test");
+        assertEquals("this is a test", ms.getMessage());
+    }
 }
