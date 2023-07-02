@@ -13,4 +13,8 @@ public class MessageService {
     public void setMessage(String message) {
         currentMessage = message;
 }
+    public void resetMessage() {
+        currentMessage = DEFAULT_MESSAGE;
+        }
+
 }

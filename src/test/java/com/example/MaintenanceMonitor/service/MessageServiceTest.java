@@ -15,4 +15,12 @@ public class MessageServiceTest {
         ms.setMessage("this is a test");
         assertEquals("this is a test", ms.getMessage());
     }
+    @Test
+    void testResetMessage() {
+        MessageService ms = new MessageService();
+        ms.setMessage("this is a test");
+        assertEquals("this is a test",ms.getMessage());
+        ms.resetMessage();
+        assertEquals("Everything works as expected",ms.getMessage());
+    }
 }
