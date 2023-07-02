@@ -16,4 +16,11 @@ public class MessageController {
         return messageService.getMessage();
     }
 
+    @RequestMapping("/api/message/set")
+    public String setMessage(@RequestParam("m") String message) {
+        messageService.setMessage(message);
+        return "ok";
+ }
+
 }
+

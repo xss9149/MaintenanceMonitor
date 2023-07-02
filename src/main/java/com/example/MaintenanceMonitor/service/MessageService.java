@@ -10,4 +10,7 @@ public class MessageService {
         return currentMessage;
     }
 
+    public void setMessage(String message) {
+        currentMessage = message;
+}
 }
