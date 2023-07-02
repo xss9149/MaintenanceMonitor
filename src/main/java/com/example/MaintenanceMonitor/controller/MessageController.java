@@ -21,6 +21,10 @@ public class MessageController {
         messageService.setMessage(message);
         return "ok";
  }
-
+    @RequestMapping ("/api/message/reset")
+    public String resetMessage() {
+        messageService.resetMessage();
+        return "ok";
+    }
 }
 
